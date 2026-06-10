@@ -190,21 +190,26 @@ const yesBtn=document.getElementById("yesBtn");
 
 yesBtn.addEventListener("click",()=>{
 
-    const msg=document.createElement("h2");
+    const msg = document.createElement("h2");
 
-    msg.innerHTML="💖 Du hast mein Herz glücklich gemacht 💖";
+msg.innerHTML = "💖 JAAAAA! 💖<br>Du hast mein Herz glücklich gemacht 🌹";
 
-    msg.style.position="fixed";
-    msg.style.top="50%";
-    msg.style.left="50%";
-    msg.style.transform="translate(-50%,-50%)";
-    msg.style.background="white";
-    msg.style.padding="20px";
-    msg.style.borderRadius="20px";
-    msg.style.color="#e91e63";
+msg.style.position = "fixed";
+msg.style.top = "50%";
+msg.style.left = "50%";
+msg.style.transform = "translate(-50%, -50%)";
 
-    document.body.appendChild(msg);
+msg.style.color = "#e91e63";
+msg.style.fontSize = "32px";
+msg.style.fontWeight = "bold";
+msg.style.textAlign = "center";
 
+msg.style.textShadow =
+"0 0 10px white, 0 0 20px white, 0 0 30px white";
+
+msg.style.zIndex = "9999";
+
+document.body.appendChild(msg);
     for(let i=0;i<100;i++){
 
         const heart=document.createElement("div");
